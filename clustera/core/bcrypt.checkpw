@@ -1,0 +1,9 @@
+import bcrypt
+
+hashed_password = "<ambil_hash_dari_database>"
+plaintext_password = "<password_plaintext_yang_diuji>"
+
+if bcrypt.checkpw(plaintext_password.encode('utf-8'), hashed_password.encode('utf-8')):
+    print("Password cocok!")
+else:
+    print("Password tidak cocok!")
