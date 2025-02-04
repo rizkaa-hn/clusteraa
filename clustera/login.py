@@ -10,7 +10,7 @@ def load_lottieurl(url):
     return r.json()
 
 def login_or_register():
-    st.image("D:\\clustera\\logo2-1.png", width=150)
+    st.image("logo2-1.png", width=150)
     
     with st.container():
         col1, col2 = st.columns([1, 1], gap="large")
