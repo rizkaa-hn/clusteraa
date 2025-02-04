@@ -10,7 +10,7 @@ from login import login_or_register  # Gabungan login dan registrasi
 # Konfigurasi halaman Streamlit
 st.set_page_config(
     page_title="clustera.",
-    page_icon="D:\\clustera\\logo.png"
+    page_icon="logo.png"
 )
 
 # Periksa apakah pengguna sudah login
@@ -20,7 +20,7 @@ if 'authenticated' not in st.session_state or not st.session_state['authenticate
 else:
     # Jika sudah login, tampilkan navigasi halaman utama
     with st.sidebar:
-        st.image("D:\\clustera\\logo2-1.png", width=150)
+        st.image("logo2-1.png", width=150)
         selected_page = option_menu(
             menu_title=None,
             options=["Dashboard", "Manajemen Data", "Visualisasi Data", "Clustering"],
